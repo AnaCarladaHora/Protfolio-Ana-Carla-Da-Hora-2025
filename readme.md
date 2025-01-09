@@ -60,7 +60,7 @@ Se você tiver alguma sugestão ou encontrar algum problema, por favor, abra uma
  Copyright (C) <2025 Ana Carla Da Hora> 
 
  ## Portfolio 2025
-![Screenshot do meu site 2025](assets/_2025.png)
+![Screenshot do meu site 2025](assets/portfolio2025.png)
 
  ## Portfolio 2022
-![Screenshot do meu site 2021](assets/2021.png)
+![Screenshot do meu site 2021](assets/portfolio1.png)
