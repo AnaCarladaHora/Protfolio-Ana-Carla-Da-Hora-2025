@@ -1084,7 +1084,7 @@ body.alto-contraste .navbar-toggler-icon {
 }
 @media (max-width: 576px) {
     #home-banner {
-       min-height: 250px;
+       min-height: 450px;
        padding: 10px 0;
    }
      #home-banner .container h1 {
