@@ -1,0 +1,1111 @@
+/* Estilos Globais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fef9bf;
+    background-color: #fef9bf;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 16px;
+}
+
+main {
+    margin-top: 100px;
+}
+header {
+        background-color: #fef9bf;
+        color: #fef9bf;
+        padding: 0.3rem 0; /* Ajuste o padding do header para telas menores */
+        position: sticky;
+        top: 0;
+        z-index: 100;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+   body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 13px;
+  }
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Imagem de Perfil */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #fdf113;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 50%;
+}
+
+/* Navegação */
+#main-nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    padding: 0.0rem 0;
+    min-height: 0px;
+    background-color: #fef9bf;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    padding: 0.3rem 0;
+    min-height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.navbar:hover{
+    background-color: #565656;
+}
+
+.tema-escuro-navbar{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+   color: #000000 !important;
+}
+
+
+.navbar-brand {
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #ddd;
+}
+
+.navbar-brand-icon {
+    margin-right: 5px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    border-color: #fff;
+}
+
+.nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #fdf113;
+    font-size: 0.8rem;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Temas da Navegação */
+body.tema-escuro .navbar-brand:hover {
+    color: #fdf113 !important;
+}
+body.tema-escuro .navbar-brand:hover .navbar-brand-icon {
+    color: #fdf113 !important;
+}
+body.tema-escuro .nav-link:hover {
+color: #fdf113 !important;
+}
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-links a:hover {
+     transform: scale(1.1);
+     color: #fdf113;
+}
+body.alto-contraste #main-nav {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+/* Texto Animado */
+#typed-text {
+    display: inline-block;
+    transition: all 0.3s ease;
+     white-space: normal; /* Permite quebra de linha */
+    font-size: 1em;
+     word-wrap: break-word; /* Quebra palavras longas */
+}
+
+.typed-word {
+    transition: all 0.5s ease;
+    margin-right: 5px;
+}
+
+#typed-text::after {
+    content: '|';
+    animation: blink-caret 1s steps(1) infinite;
+    margin-left: 0.1em;
+    color: white;
+}
+
+@keyframes blink-caret {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    #typed-text {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 576px) {
+    #typed-text {
+        font-size: 0.5em;
+    }
+}
+
+/* Seção Sobre */
+#about .about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#about .about-content p {
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+#about .about-content .row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about .about-content .col-md-6 {
+    flex: 1;
+     min-width: 300px;
+    margin-bottom: 15px;
+}
+
+#about .about-content .col-md-6 ul li {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#about .about-content .col-md-6 ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* Temas da Seção Sobre */
+body.tema-claro #about,
+body.tema-claro .about-content,
+body.tema-claro #about .about-content p,
+body.tema-claro #about .about-content h3,
+body.tema-claro #about .about-content .col-md-6 ul li,
+body.tema-claro #about .about-content .row h3,
+body.tema-claro #about .about-content .skills h3,
+body.tema-claro #about .about-content .soft-skills h3 {
+    background-color:#f0f0f0 !important;
+    color: #000000 !important;
+}
+
+body.tema-escuro #about,
+body.tema-escuro .about-content,
+body.tema-escuro #about .about-content p,
+body.tema-escuro #about .about-content h3,
+body.tema-escuro #about .about-content .col-md-6 ul li,
+body.tema-escuro #about .about-content .row h3,
+body.tema-escuro #about .about-content .skills h3,
+body.tema-escuro #about .about-content .soft-skills h3 {
+    background-color: #000000 !important;
+    color: #fff!important;
+}
+
+body.alto-contraste #about,
+body.alto-contraste.about-content,
+body.alto-contraste #about .about-content p,
+body.alto-contraste #about .about-content h3,
+body.alto-contraste #about .about-content .col-md-6 ul li,
+body.alto-contraste #about .about-content .row h3,
+body.alto-contraste #about .about-content .skills h3,
+body.alto-contraste #about .about-content .soft-skills h3 {
+    background-color: #848484 !important;
+    color: #fff !important;
+}
+
+/* Seção de Educação */
+.education-item {
+    margin-bottom: 0px;
+    background-color: #fef9bf;
+    padding: 15px;
+    border: 1px solid #000000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.education-item:hover {
+    transform: scale(1.02);
+}
+
+.education-box {
+    margin-bottom: 20px;
+}
+
+.education-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    flex-shrink: 0;
+}
+
+.education-logo:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Temas da Seção de Educação */
+body.tema-claro .education-item {
+    background-color: #f0f0f0;
+    border: 1px solid #000000;
+}
+
+body.tema-escuro .education-item {
+    background-color: #000000;
+    border: 1px solid #fef9bf;
+}
+
+body.alto-contraste .education-item {
+    background-color: #848484;
+    border: 1px solid #000000;
+}
+
+body.alto-contraste .education-item {
+    background-color: #848484;
+    border: 1px solid #fef9bf;
+}
+
+/* Links Sociais */
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    color: #fdf113;
+}
+
+/* Controles de Acessibilidade */
+.accessibility-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accessibility-container button {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .accessibility-container button{
+        font-size: 0.8rem;
+    }
+}
+
+.accessibility-container button:hover {
+    background-color: #fdf113;
+}
+
+.accessibility-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.accessibility-menu.open {
+    display: flex;
+}
+
+.accessibility-item {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accessibility-item:hover {
+    background-color: #565656;
+}
+
+/* Temas de Acessibilidade */
+.tema-claro {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.tema-escuro {
+    background-color: #000000;
+    color: #fff;
+}
+
+.fonte-maior {
+    font-size: 1.2em;
+}
+
+body.alto-contraste .accessibility-menu button,
+body.alto-contraste .accessibility-item{
+    color: #fff;
+    background-color:#000000
+}
+
+.alto-contraste {
+    background-color: #848484;
+    color: #000000;
+    border: none;
+}
+
+body.alto-contraste,
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste h4,
+body.alto-contraste h5,
+body.alto-contraste h6,
+body.alto-contraste p,
+body.alto-contraste a,
+body.alto-contraste li,
+body.alto-contraste span,
+body.alto-contraste button,
+body.alto-contraste label,
+body.alto-contraste input,
+body.alto-contraste textarea {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+body.tema-claro,
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3,
+body.tema-claro h4,
+body.tema-claro h5,
+body.tema-claro h6,
+body.tema-claro p,
+body.tema-claro a,
+body.tema-claro li,
+body.tema-claro span,
+body.tema-claro button,
+body.tema-claro label,
+body.tema-claro input,
+body.tema-claro textarea {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+body.tema-escuro,
+body.tema-escuro h1,
+body.tema-escuro h2,
+body.tema-escuro h3,
+body.tema-escuro h4,
+body.tema-escuro h5,
+body.tema-escuro h6,
+body.tema-escuro p,
+body.tema-escuro a,
+body.tema-escuro li,
+body.tema-escuro span,
+body.tema-escuro button,
+body.tema-escuro label,
+body.tema-escuro input,
+body.tema-escuro textarea {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+body.tema-claro .accessibility-menu button,
+body.tema-claro .accessibility-item{
+   background-color: transparent;
+   color: #000000;
+}
+
+body.tema-escuro .accessibility-menu button,
+body.tema-escuro .accessibility-item{
+    background-color: transparent;
+    color: #000000;
+}
+
+/* Seção de Projetos */
+#projects.projects {
+    background-color: #fef9bf;
+      transition: background-color 0.3s ease;
+}
+
+#projects .card {
+    background-color: #fef9bf;
+    border: 1px solid #000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#projects .card-title {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#projects .card-text {
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+#projects .btn {
+    background-color: #fdf113;
+    color: #000000;
+    border: none;
+    transition: all 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#projects .btn:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projects .card-body .btn {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+    transition: background-color 0.3s ease;
+}
+
+#projects .card-body .btn:hover {
+    background-color: #fdf113;
+}
+
+/* Temas da Seção Projetos */
+body.tema-claro #projects.projects {
+    background-color:#f0f0f0 !important;
+}
+
+body.tema-escuro #projects.projects {
+    background-color: #000000 !important;
+}
+body.alto-contraste #projects.projects{
+    background-color: rgba(255, 249, 191, 0.8) !important;
+}
+body.alto-contraste #projects.projects{
+      background-color: #848484 !important;
+}
+body.tema-claro #projects .card,
+body.tema-claro #projects .card-title,
+body.tema-claro #projects .card-text,
+body.tema-claro #projects .btn,
+body.tema-claro #projects .card-body .btn {
+    background-color: #fff !important;
+    color: #000000 !important;
+}
+
+body.tema-escuro #projects .card,
+body.tema-escuro #projects .card-title,
+body.tema-escuro #projects .card-text,
+body.tema-escuro #projects .btn,
+body.tema-escuro #projects .card-body .btn {
+    background-color: #fef9bf !important;
+    color: #000000 !important;
+}
+
+/* Seção Banner */
+#home-banner .btn {
+    background-color: #fef9bf;
+    color: #000000;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border: var(#fef9bf) solid var (#f0f0f0)
+}
+
+#home-banner .btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about .about-content .col-md-6 {
+    flex: 1;
+     min-width: 300px;
+    margin-bottom: 15px;
+}
+
+#about .about-content .col-md-6 ul li {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#about .about-content .col-md-6 ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* ... seu código CSS anterior ... */
+/* ... seu código CSS anterior ... */
+#home-banner {
+    background-image: url('assets/ana7.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: #000000;
+    height: 100vh;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.5s ease;
+    display: flex; /* Para alinhar o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+     text-align: center; /* Centraliza o conteúdo horizontalmente */
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra na seção do banner */
+}
+#home-banner:hover {
+    transform: translateY(-5px);
+}
+#home-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+#home-banner:hover::before {
+    opacity: 0.7;
+}
+#home-banner .container{
+     position: relative;
+     z-index: 3;
+    display: flex;
+    flex-direction: column;
+        justify-content: flex-start; /* Centraliza horizontalmente */
+        align-items: flex-start; /* Centraliza verticalmente */
+}
+
+/* ... seu código CSS posterior ... */
+
+#home-banner:hover{
+    transform: translateY(-5px);
+
+}
+
+#home-banner::before {
+    display: none;
+}
+
+
+#home-banner .banner-text-home {
+    flex: 1;
+    padding-left: 50px;
+}
+
+#home-banner .banner-text-home h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: revert-layer;
+    padding: 10px;
+}
+
+#home-banner .banner-text-home p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#home-banner .banner-button {
+    margin-top: 20px;
+    padding-left: 0;
+    padding: 10px;
+}
+
+#home-banner .banner-image{
+     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   padding-top: 10px;
+ }
+
+/* Imagem do Banner */
+.profile-banner {
+     max-width: 300px;
+    max-height: 300px;
+     object-fit: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+      display: block;
+    margin-top: 25px;
+}
+#home-banner p {
+    font-size: 1rem; /* Reduz o tamanho da fonte do texto */
+      white-space: pre-line; /* Mantém a quebra de linha */
+      word-break: break-word; /* Quebra palavras muito longas */
+}
+
+/* Títulos da Seção */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    transition: transform 0.3s ease;
+}
+
+h2:hover {
+    transform: translateY(-3px);
+}
+
+.badge {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.badge:hover {
+    background-color: #fdf113;
+    transform: scale(1.1);
+}
+
+/* Cartões de Conteúdo */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #fdf113;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.card-img-top:hover{
+    filter: brightness(1.1);
+}
+
+/* Botões */
+.btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+body.tema-claro footer {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+body.tema-escuro footer {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Animação de Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Seção de Contato */
+#contact {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#contact .container {
+    max-width: 700px;
+    padding: 30px;
+}
+
+#contact h2 {
+    border-bottom: 2px solid #fdf113;
+    padding-bottom: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #fdf113;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact textarea {
+    height: 150px;
+}
+
+#contact .btn {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#contact .btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: row-reverse;
+}
+
+#contact .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contact .social-links a:hover {
+    transform: scale(1.1);
+    color: #fdf113;
+}
+
+#contact p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Temas da Seção Contato */
+body.tema-claro #contact {
+    background-color: #f0f0f0;
+}
+
+body.tema-escuro #contact {
+    background-color: #000000;
+}
+body.alto-contraste #contact{
+    background-color: rgba(255, 249, 191, 0.8);
+ }
+ body.alto-contraste #contact{
+    background-color: #848484;
+}
+body.tema-claro #contact input,
+body.tema-claro #contact textarea,
+body.tema-claro #contact h2,
+body.tema-claro #contact p,
+body.tema-claro #contact .social-links a {
+    color: #000000;
+}
+
+body.tema-escuro #contact input,
+body.tema-escuro #contact textarea,
+ body.tema-escuro #contact .social-links a
+{
+    color: #000000;
+}
+body.tema-escuro #contact h2{
+    color: #fff;
+}
+body.tema-escuro #textarea {
+    color: #fff;
+}
+body.tema-escuro #contact p{
+    color: #fff;
+}
+body.tema-escuro #contact{
+    color: #fff;
+ }
+ body.tema-escuro #contact .social-links a
+{
+      color: #000000;}
+      
+/* Seção de Tecnologias */
+#tech-skills {
+    padding: 50px 0;
+    background-color: #f0f0f0;
+     transition: background-color 0.3s ease;
+}
+
+#tech-skills .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#tech-skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+      transition: transform 0.3s ease;
+}
+#tech-skills h2:hover{
+   transform: translateY(-3px);
+}
+
+#tech-skills .tech-skills-content {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+     transition: background-color 0.3s ease;
+}
+
+#tech-skills .tech-skills-list {
+     list-style: none;
+    padding: 0;
+    margin: 0;
+   display: flex;
+  flex-wrap: wrap; /* Para quebrar a linha em telas menores */
+    justify-content: center; /* Centraliza as tags */
+}
+
+#tech-skills .tech-skills-list li {
+     margin: 5px; /* Espaçamento entre as tags */
+}
+
+/* Temas da Seção Tecnologias */
+body.tema-claro #tech-skills {
+    background-color: #f0f0f0 !important;
+      color: #000000 !important;
+
+}
+body.tema-escuro{
+    background-color: #000000 !important;
+    color: #fff !important;  
+}
+body.tema-escuro #tech-skills {
+    background-color: #000000 !important;
+   color: #fff !important;
+}
+body.alto-contraste #tech-skills{
+    background-color: #848484 !important; /* Cor de fundo da seção projetos no tema claro */
+}
+body.alto-contraste #tech-skills{
+      background-color: #848484 !important;   /* Cor de fundo da seção projetos no tema escuro */
+
+}
+/* Alterar a cor do navbar-toggler-icon para branco no tema escuro e adicionar borda */
+body.tema-escuro .navbar-toggler {
+    border: 1px solid #fff; /* Adiciona borda branca ao botão */
+}
+/* Alterar a cor do navbar-toggler-icon para branco no tema alto contraste e adicionar borda */
+body.alto-contraste .navbar-toggler {
+    border: 1px solid #fff; /* Adiciona borda branca ao botão */
+}
+/* mudar a cor do icon do toggler no tema escuro */
+body.tema-escuro .navbar-toggler-icon {
+  filter: invert(1);
+}
+/* mudar a cor do icon do toggler no tema alto contraste */
+body.alto-contraste .navbar-toggler-icon {
+  filter: invert(1);
+}
+/* Media Queries para Dispositivos Móveis */
+@media (max-width: 992px){
+  #about .about-content .row{
+     flex-direction: column;
+       align-items: center;
+  }
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+         margin: 5px 0;
+    }
+    #home-banner {
+         min-height: 300px;
+         padding: 20px 0;
+           text-align: center;
+        justify-content: center;
+         height: auto;
+     }
+    #home-banner h1 {
+      font-size: 2rem;
+    }
+    #home-banner p {
+         font-size: 1rem;
+         display: flex;
+    }
+    .card-img-top {
+        max-height: 150px;
+    }
+    .project-item {
+       margin-bottom: 20px;
+    }
+    .social-links a {
+         margin: 5px;
+    }
+     .social-links {
+       flex-direction: column;
+        align-items: center;
+    }
+    .education-logo {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: center;
+    }
+     .profile-banner{
+       width: 250px;
+       height: 250px;
+         margin-top: 10px;
+       float: none;
+    }
+     header{
+          padding: 0.2rem 0;
+     }
+}
+@media (max-width: 576px) {
+    #home-banner {
+       min-height: 250px;
+       padding: 10px 0;
+   }
+     #home-banner .container h1 {
+         font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+    }
+   #home-banner .container p {
+         font-size: 0.5rem;  /* Reduz o tamanho da fonte do texto */
+        margin-bottom: 10px;
+   }
+   .profile-pic {
+       width: 120px;
+       height: 120px;
+   }
+  .education-logo {
+       width: 50px;
+       height: 50px;
+   }
+     .profile-banner {
+          width: 150px; /* Ajusta o tamanho da imagem de perfil */
+           height: 150px;
+           margin-top: 10px;
+   }
+}
+/* ... seu código CSS posterior ... */
