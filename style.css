@@ -1084,14 +1084,14 @@ body.alto-contraste .navbar-toggler-icon {
 }
 @media (max-width: 576px) {
     #home-banner {
-       min-height: 450px;
+       min-height: 410px;
        padding: 10px 0;
    }
      #home-banner .container h1 {
          font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
     }
    #home-banner .container p {
-         font-size: 0.5rem;  /* Reduz o tamanho da fonte do texto */
+         font-size: 0.4rem;  /* Reduz o tamanho da fonte do texto */
         margin-bottom: 10px;
    }
    .profile-pic {
