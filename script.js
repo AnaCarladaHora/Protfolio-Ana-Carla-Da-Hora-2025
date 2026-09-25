@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
      // Efeito de digitação
     const typedTextSpan = document.getElementById('typed-text');
-    const phrases = ["Desenvolvedora Front End", "Apaixonada por UX/UI", "Criadora de Interfaces Web", "Tecnologia"];
+    const phrases = ["Desenvolvedora Front End", "Apaixonada por UX/UI", "Criadora de Interfaces Web", "Tecnologia", "Tecnologia & Sistemas", "Criadora de Conteúdo"];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
